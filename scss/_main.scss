@@ -1,0 +1,166 @@
+@mixin vertical-align($position: relative) {
+    position: $position;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@mixin nav-block($bimg, $bcolor) {
+    position: relative;
+    background: darken($bcolor, 10%);
+    &:before {
+        content: " ";
+        background-image: url($bimg);
+        background-size: cover;
+        background-position: center center;
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+    }
+    &:hover {
+        background: darken($bcolor, 15%);
+        padding-left: 20%;
+    }
+}
+$az-yellow: #F0AB0D;
+$az-cyan: #68D2DF;
+$az-pink: #D0006F;
+$az-purple: #3C1053;
+$az-green: #C3D500;
+$navW: 240px;
+$trailW:240px;
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI";
+}
+.left-menu {
+    overflow-y: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 15px;
+    width: $navW;
+    height: 100vh;
+    background-color: #830051;
+    color: white;
+    box-shadow: 1px 0 5px 0 black;
+    @media screen and (max-height:720px) {
+        overflow-y: scroll;
+        width: $navW+20;
+    }
+    header {
+        .language {
+            font-size: 14px;
+        }
+        .home {
+            figure {
+                margin: 0;
+                padding: 15px 0;
+                img {
+                    display: inline;
+                }
+                figcaption {
+                    display: inline;
+                    font-size: 32px;
+                    padding-left: 15px;
+                    @include vertical-align();
+                }
+            }
+        }
+    }
+    nav {
+        margin: 0 -15px;
+        .nav-block {
+            width: 100%;
+            height: 80px;
+            margin: 10px 0;
+            vertical-align: middle;
+            a {
+                color: inherit;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 28px;
+                line-height: 120%;
+                text-align: center;
+                width: 100%;
+                @include vertical-align();
+            }
+        }
+        #nb1 {
+            @include nav-block("/img/desk.jpg", $az-yellow);
+        }
+        #nb2 {
+            @include nav-block("/img/road.jpg", $az-cyan);
+        }
+        #nb3 {
+            @include nav-block("/img/device.jpg", $az-pink);
+        }
+        #nb4 {
+            @include nav-block("/img/software.jpg", $az-purple);
+        }
+        #nb5 {
+            @include nav-block("/img/training.png", $az-green);
+        }
+    }
+    footer {
+        height: 70px;
+        width: 210px;
+        position: absolute;
+        bottom: 15px;
+        @media screen and (max-height:720px) {
+            position: static;
+        }
+        .footer-logo {
+            color: #999999;
+            font-size: 20px;
+            padding: 0 10px;
+            width: 100%;
+            height: 100%;
+            background: #FFF;
+            background-image: url("/img/WYW_BASIC_T.png");
+            background-size: 90%;
+            background-repeat: no-repeat;
+            background-position: 50% 75%;
+        }
+    }
+}
+.tableofcontents{
+    width:240px;
+    position:fixed;
+    left:250px;
+    top:10px;
+    background-color:$az-green;
+    li{
+        .active{
+            background-color:darken($az-green, 10%);
+        }
+    }
+    a{
+        color:white;
+    }
+}
+main {
+    margin-left: $navW*2;
+    padding: 10px;
+    min-width:500px;
+    @media screen and (max-height:720px) {
+        margin-left: $navW+20;
+    }
+    .new-stuff {
+        .orbit-image {
+            height: 300px;
+        }
+        .orbit-caption {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5rem;
+            letter-spacing: 0.6rem;
+        }
+    }
+}
