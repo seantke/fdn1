@@ -4635,6 +4635,21 @@ table.hover tr:nth-of-type(even):hover {
   -webkit-animation-delay: 700ms !important;
           animation-delay: 700ms !important; }
 
+.az-yellow {
+  background-color: #c0890a; }
+
+.az-cyan {
+  background-color: #3ec5d6; }
+
+.az-pink {
+  background-color: #9d0054; }
+
+.az-purple {
+  background-color: #2d0c3e; }
+
+.az-green {
+  background-color: #94a200; }
+
 * {
   box-sizing: border-box;
   font-family: "Segoe UI"; }
@@ -4695,7 +4710,7 @@ table.hover tr:nth-of-type(even):hover {
       background: #c0890a; }
       .left-menu nav #nb1:before {
         content: " ";
-        background-image: url("/img/desk.jpg");
+        background-image: url("/fdn1/img/desk.jpg");
         background-size: cover;
         background-position: center center;
         display: block;
@@ -4715,7 +4730,7 @@ table.hover tr:nth-of-type(even):hover {
       background: #3ec5d6; }
       .left-menu nav #nb2:before {
         content: " ";
-        background-image: url("/img/road.jpg");
+        background-image: url("/fdn1/img/road.jpg");
         background-size: cover;
         background-position: center center;
         display: block;
@@ -4735,7 +4750,7 @@ table.hover tr:nth-of-type(even):hover {
       background: #9d0054; }
       .left-menu nav #nb3:before {
         content: " ";
-        background-image: url("/img/device.jpg");
+        background-image: url("/fdn1/img/device.jpg");
         background-size: cover;
         background-position: center center;
         display: block;
@@ -4755,7 +4770,7 @@ table.hover tr:nth-of-type(even):hover {
       background: #1d0828; }
       .left-menu nav #nb4:before {
         content: " ";
-        background-image: url("/img/software.jpg");
+        background-image: url("/fdn1/img/software.jpg");
         background-size: cover;
         background-position: center center;
         display: block;
@@ -4775,7 +4790,7 @@ table.hover tr:nth-of-type(even):hover {
       background: #94a200; }
       .left-menu nav #nb5:before {
         content: " ";
-        background-image: url("/img/training.png");
+        background-image: url("/fdn1/img/training.png");
         background-size: cover;
         background-position: center center;
         display: block;
@@ -4805,31 +4820,48 @@ table.hover tr:nth-of-type(even):hover {
       width: 100%;
       height: 100%;
       background: #FFF;
-      background-image: url("/img/WYW_BASIC_T.png");
+      background-image: url("/fdn1/img/WYW_BASIC_T.png");
       background-size: 90%;
       background-repeat: no-repeat;
       background-position: 50% 75%; }
 
 .tableofcontents {
+  padding: 10px 0;
   width: 240px;
   position: fixed;
-  left: 250px;
-  top: 10px;
-  background-color: #C3D500; }
-  .tableofcontents li .active {
-    background-color: #94a200; }
-  .tableofcontents a {
-    color: white; }
+  left: 240px;
+  top: 0;
+  bottom: 0; }
+  .tableofcontents li {
+    margin: 0;
+    padding: 0; }
+    .tableofcontents li .active {
+      background-color: RGBA(255, 255, 255, 0.2); }
+    .tableofcontents li a {
+      padding: 15px;
+      color: white; }
 
 main {
-  margin-left: 480px;
   padding: 10px;
-  min-width: 500px; }
+  min-width: 500px;
+  margin-left: 480px; }
+  main:not(.home) {
+    min-height: 2000px; }
+  main.home {
+    margin-left: 240px; }
   @media screen and (max-height: 720px) {
     main {
       margin-left: 260px; } }
+  main .info {
+    height: 300px;
+    overflow: hidden; }
+    main .info #chatter {
+      background-image: url("/fdn1/img/chatter_nobarder.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain; }
   main .new-stuff .orbit-image {
-    height: 300px; }
+    height: 500px; }
   main .new-stuff .orbit-caption {
     display: -webkit-flex;
     display: -ms-flexbox;

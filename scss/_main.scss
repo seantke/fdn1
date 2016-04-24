@@ -31,6 +31,27 @@ $az-cyan: #68D2DF;
 $az-pink: #D0006F;
 $az-purple: #3C1053;
 $az-green: #C3D500;
+.az-yellow{
+    background-color: darken(#F0AB0D, 10%);
+}
+
+.az-cyan{
+    background-color: darken(#68D2DF, 10%);
+}
+
+.az-pink{
+    background-color: darken(#D0006F, 10%);
+}
+
+.az-purple{
+    background-color: darken(#3C1053, 5%);
+}
+
+.az-green{
+    background-color: darken(#C3D500, 10%);
+}
+
+
 $navW: 240px;
 $trailW:240px;
 * {
@@ -91,19 +112,19 @@ $trailW:240px;
             }
         }
         #nb1 {
-            @include nav-block("/img/desk.jpg", $az-yellow);
+            @include nav-block("/fdn1/img/desk.jpg", $az-yellow);
         }
         #nb2 {
-            @include nav-block("/img/road.jpg", $az-cyan);
+            @include nav-block("/fdn1/img/road.jpg", $az-cyan);
         }
         #nb3 {
-            @include nav-block("/img/device.jpg", $az-pink);
+            @include nav-block("/fdn1/img/device.jpg", $az-pink);
         }
         #nb4 {
-            @include nav-block("/img/software.jpg", $az-purple);
+            @include nav-block("/fdn1/img/software.jpg", $az-purple);
         }
         #nb5 {
-            @include nav-block("/img/training.png", $az-green);
+            @include nav-block("/fdn1/img/training.png", $az-green);
         }
     }
     footer {
@@ -121,7 +142,7 @@ $trailW:240px;
             width: 100%;
             height: 100%;
             background: #FFF;
-            background-image: url("/img/WYW_BASIC_T.png");
+            background-image: url("/fdn1/img/WYW_BASIC_T.png");
             background-size: 90%;
             background-repeat: no-repeat;
             background-position: 50% 75%;
@@ -129,30 +150,50 @@ $trailW:240px;
     }
 }
 .tableofcontents{
+    padding: 10px 0;
     width:240px;
     position:fixed;
-    left:250px;
-    top:10px;
-    background-color:$az-green;
+    left:240px;
+    top:0;
+    bottom:0;
     li{
+        margin: 0;
+        padding: 0;
         .active{
-            background-color:darken($az-green, 10%);
+            background-color:RGBA(255,255,255,0.2);
         }
-    }
-    a{
-        color:white;
+        a{
+            padding: 15px;
+            color:white;
+        }
     }
 }
 main {
-    margin-left: $navW*2;
     padding: 10px;
     min-width:500px;
+    margin-left: $navW*2;
+    &:not(.home){
+        min-height:2000px;
+    }
+    &.home{
+        margin-left: $navW;
+    }
     @media screen and (max-height:720px) {
         margin-left: $navW+20;
     }
+    .info {
+        height:300px;
+        overflow:hidden;
+        #chatter{
+            background-image: url("/fdn1/img/chatter_nobarder.png");
+            background-position:center center;
+            background-repeat:no-repeat;
+            background-size:contain;
+        }
+    }
     .new-stuff {
         .orbit-image {
-            height: 300px;
+            height:500px;
         }
         .orbit-caption {
             display: flex;
