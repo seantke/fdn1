@@ -1,5 +1,5 @@
 <?php include "../partials/_header.php"; ?>
-    <aside class="tableofcontents az-purple">
+    <aside class="tableofcontents az-purple toggle-menu">
         <ul class="vertical menu" data-magellan>
             <li><a href="#home">Home</a></li>
             <li><a href="#first">First Arrival</a></li>

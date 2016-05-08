@@ -1,43 +1,103 @@
-<?php include "../partials/_header.php"; ?>
-    <aside class="tableofcontents az-pink">
+<?php include '../partials/_header.php'; ?>
+    <aside class="tableofcontents az-pink toggle-menu">
         <ul class="vertical menu" data-magellan>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#first">First Arrival</a></li>
-            <li><a href="#second">Second Arrival</a></li>
-            <li><a href="#third">Third Arrival</a></li>
+            <li><a href="#home">At My Desk</a></li>
+            <li><a href="#Outlook">Outlook</a></li>
+            <li><a href="#MeetingRoom">Meeting Room</a></li>
+            <li><a href="#Skype">Skype</a></li>
+            <li><a href="#Lync">Lync</a></li>
+            <li><a href="#Docusign">Docusign</a></li>
+            <li><a href="#OneDrive">OneDrive</a></li>
+            <li><a href="#Office365">Office 365 in the Cloud</a></li>
+            <li><a href="#WYW">Work YOUR Way</a></li>
+            <li><a href="#ThinkExpo">ThinkExpo</a></li>
+            <li><a href="#ThinkSpace">THINKspace</a></li>
+            <li><a href="#Avaya">AVAYA phones and voicemail</a></li>
         </ul>
     </aside>
     <main>
         <div class="column small-12 align-center">
-            <div id="first" data-magellan-target="first">
+            <div id="home" data-magellan-target="home">
                 <div class="callout">
-                    <h3>Microsoft Office 365 in the cloud</h3>
-                    <p>Office 365 in the cloud is your portable office. Not only can you access your mail and files, you can also use the full Office Suite either online or on your home computer. Now you will never be caught without your computer!</p>
-                </div>
-            </div>
-            <div id="second" data-magellan-target="second">
-                <div class="callout">
-                    <p>
-                        Cornhole quinoa offal kale chips helvetica, before they sold out marfa pop-up chillwave selvage post-ironic. Man bun normcore hoodie flannel actually, direct trade jean shorts. Kale chips mlkshk flannel actually. Ethical sartorial tousled, farm-to-table
-                        waistcoat man bun shoreditch normcore. Vice bushwick tilde ennui, selvage 90's DIY swag lumbersexual vinyl whatever deep v YOLO bicycle rights venmo. Poutine photo booth stumptown 90's. Chillwave twee listicle, keffiyeh pour-over
-                        forage post-ironic whatever banh mi paleo wayfarers. Kinfolk mumblecore irony pitchfork 3 wolf moon, vegan art party synth artisan ramps gochujang literally. Mumblecore kale chips forage, quinoa single-origin coffee ramps before
-                        they sold out scenester umami williamsburg intelligentsia vegan crucifix man bun. Ramps fap organic put a bird on it. Kogi cornhole YOLO tote bag, marfa poutine sustainable ennui ugh gluten-free shabby chic literally organic asymmetrical.
-                        Twee tousled farm-to-table celiac selfies. Salvia stumptown ennui narwhal skateboard, occupy aesthetic pour-over sriracha. Pour-over heirloom bespoke banjo messenger bag.
-                    </p>
-                </div>
-            </div>
-            <div id="third" data-magellan-target="third">
-                <div class="callout">
-                    <p>
-                        Cornhole quinoa offal kale chips helvetica, before they sold out marfa pop-up chillwave selvage post-ironic. Man bun normcore hoodie flannel actually, direct trade jean shorts. Kale chips mlkshk flannel actually. Ethical sartorial tousled, farm-to-table
-                        waistcoat man bun shoreditch normcore. Vice bushwick tilde ennui, selvage 90's DIY swag lumbersexual vinyl whatever deep v YOLO bicycle rights venmo. Poutine photo booth stumptown 90's. Chillwave twee listicle, keffiyeh pour-over
-                        forage post-ironic whatever banh mi paleo wayfarers. Kinfolk mumblecore irony pitchfork 3 wolf moon, vegan art party synth artisan ramps gochujang literally. Mumblecore kale chips forage, quinoa single-origin coffee ramps before
-                        they sold out scenester umami williamsburg intelligentsia vegan crucifix man bun. Ramps fap organic put a bird on it. Kogi cornhole YOLO tote bag, marfa poutine sustainable ennui ugh gluten-free shabby chic literally organic asymmetrical.
-                        Twee tousled farm-to-table celiac selfies. Salvia stumptown ennui narwhal skateboard, occupy aesthetic pour-over sriracha. Pour-over heirloom bespoke banjo messenger bag.
-                    </p>
+                    <h3>At My Desk</h3>
                 </div>
             </div>
         </div>
+        <div class="column small-12 align-center">
+            <div id="Outlook" data-magellan-target="Outlook" class="callout">
+                    <h3>Microsoft Outlook</h3>
+                    <p>
+                        Learn more about accessing Outlook in the Cloud (from any device).
+                    </p>
+                    <p>
+                        For more information and all of our documentation on Microsoft Outlook
+                    </p>
+                    <a class="button az-green" href="#">Click Here</a>
+                <div class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+                    <li class="accordion-item" data-accordion-item>
+                        <a href="#" class="accordion-title">Watch a video</a>
+                        <div class="accordion-content" data-tab-content>
+                            <iframe width="480" height="270" src="https://www.youtube.com/embed/jpUc70rGPb0?feature=player_detailpage" frameborder="0" allowfullscreen=""></iframe>
+                        </div>
+                    </li>
+                    <li class="accordion-item" data-accordion-item>
+                        <a href="#" class="accordion-title">8 great timesavers</a>
+                        <div class="accordion-content" data-tab-content>
+                            <p>Outlook is part of our office in the cloud service click here to find out more about this new service.</p>
+                            <a class="button az-green" href="#">Click Here</a>
+                        </div>
+                    </li>
+                    <li class="accordion-item" data-accordion-item>
+                        <a href="#" class="accordion-title">Log in to Office 365</a>
+                        <div class="accordion-content" data-tab-content>
+                            <p>To get right to the action and log into office 365</p>
+                            <a class="button az-green" href="https://login.microsoftonline.com/">Click Here</a>
+                        </div>
+                    </li>
+                    <li class="accordion-item" data-accordion-item>
+                        <a href="#" class="accordion-title">Office in the Cloud</a>
+                        <div class="accordion-content" data-tab-content>
+                            <p>Outlook is part of our office in the cloud service click here to find out more about this new service.</p>
+                            <a class="button az-green" href="#">Click Here</a>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </div>
+        <div class="column small-12 align-center">
+            <div id="MeetingRoom" data-magellan-target="MeetingRoom" class="callout">
+                    <h3>Meeting Room</h3>
+                    <p>
+                        Learn more about accessing Outlook in the Cloud (from any device).
+                    </p>
+                    <p>
+                        For more information and all of our documentation on Microsoft Outlook
+                    </p>
+                    <a class="button az-green" href="#">Click Here</a>
+                <div class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
+                    <li class="accordion-item" data-accordion-item>
+                        <a href="#" class="accordion-title">8 great timesavers</a>
+                        <div class="accordion-content" data-tab-content>
+                            <p>Outlook is part of our office in the cloud service click here to find out more about this new service.</p>
+                            <a class="button az-green" href="#">Click Here</a>
+                        </div>
+                    </li>
+                    <li class="accordion-item" data-accordion-item>
+                        <a href="#" class="accordion-title">Log in to Office 365</a>
+                        <div class="accordion-content" data-tab-content>
+                            <p>To get right to the action and log into office 365</p>
+                            <a class="button az-green" href="https://login.microsoftonline.com/">Click Here</a>
+                        </div>
+                    </li>
+                    <li class="accordion-item" data-accordion-item>
+                        <a href="#" class="accordion-title">Office in the Cloud</a>
+                        <div class="accordion-content" data-tab-content>
+                            <p>Outlook is part of our office in the cloud service click here to find out more about this new service.</p>
+                            <a class="button az-green" href="#">Click Here</a>
+                        </div>
+                    </li>
+                </div>
+            </div>
         </div>
     </main>
-<?php include "../partials/_footer.php"; ?>
+<?php include '../partials/_footer.php'; ?>

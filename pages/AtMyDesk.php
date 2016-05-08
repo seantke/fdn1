@@ -1,5 +1,5 @@
-<?php include "../partials/_header.php"; ?>
-    <aside class="tableofcontents az-yellow">
+<?php include '../partials/_header.php'; ?>
+    <aside class="tableofcontents az-yellow toggle-menu">
         <ul class="vertical menu" data-magellan>
             <li><a href="#home">At My Desk</a></li>
             <li><a href="#Outlook">Outlook</a></li>
@@ -100,4 +100,4 @@
             </div>
         </div>
     </main>
-<?php include "../partials/_footer.php"; ?>
+<?php include '../partials/_footer.php'; ?>

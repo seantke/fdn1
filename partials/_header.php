@@ -6,29 +6,36 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AZ Canada IT</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/fdn1/css/app.css">
 </head>
 
 <body>
-    <aside class="left-menu">
-        <header>
+    <header class="header">
+        <div class="menu-button">
+            <i class="material-icons">menu</i>
+            <span>Menu</span>
+        </div>
+        <div class="nav-home">
+            <a href="/fdn1/">
+                <figure>
+                    <img src="/fdn1/img/myIT_small.png" alt="MyIT">
+                    <figcaption>Home</figcaption>
+                </figure>
+            </a>
+        </div>
+        <div class="top-nav-right">
+            <div class="search">
+                <i class="material-icons">search</i>
+                <input type="text" placeholder="Search">
+            </div>
             <div class="language">
                 <span>Language: English</span>
                 <a href="#">(French)</a>
             </div>
-            <div class="home">
-                <a href="/fdn1/">
-                    <figure>
-                        <img src="/fdn1/img/myIT_small.png" alt="MyIT">
-                        <figcaption>Home</figcaption>
-                    </figure>
-                </a>
-            </div>
-            <div class="search">
-                <i class="icon icon-search"></i>
-                <input type="text" placeholder="Search">
-            </div>
-        </header>
+        </div>
+    </header>
+    <aside class="left-menu toggle-menu">
         <nav>
             <div class="nav-block" id="nb1"><a href="/fdn1/pages/AtMyDesk.php">At My Desk</a></div>
             <div class="nav-block" id="nb2"><a href="/fdn1/pages/OnTheMove.php">On the Move</a></div>

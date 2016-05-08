@@ -31,67 +31,105 @@ $az-cyan: #68D2DF;
 $az-pink: #D0006F;
 $az-purple: #3C1053;
 $az-green: #C3D500;
-.az-yellow{
+$az-mag: #830051;
+.az-yellow {
     background-color: darken(#F0AB0D, 10%);
 }
-
-.az-cyan{
+.az-cyan {
     background-color: darken(#68D2DF, 10%);
 }
-
-.az-pink{
+.az-pink {
     background-color: darken(#D0006F, 10%);
 }
-
-.az-purple{
+.az-purple {
     background-color: darken(#3C1053, 5%);
 }
-
-.az-green{
+.az-green {
     background-color: darken(#C3D500, 10%);
 }
-
-
 $navW: 240px;
-$trailW:240px;
+$trailW: 240px;
 * {
     box-sizing: border-box;
     font-family: "Segoe UI";
+}
+body {
+    background-color: #FAFAFA;
+    min-width: 1000px;
+}
+.toggle-menu {
+    transform: translate(0,0);
+    transition: all 0.7s ease-in-out;
+    z-index: 100;
+    &:before{
+        content:' ';
+        height:50px;
+        width:100%;
+        display:inline-block;
+    }
+}
+.header {
+    background-color: white;
+    padding: 5px 20px;
+    border: 1px solid $az-mag;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-width:1000px;
+    z-index:999;
+    * {
+        display: inline-block;
+        max-height: 40px;
+        padding: 0;
+        margin: 0;
+        vertical-align: middle;
+    }
+    .menu-button {
+        border: 1px solid #666;
+        padding: 5px;
+        color: #666;
+        cursor: pointer;
+    }
+    .top-nav-right{
+        float:right;
+        .search {
+            border: 1px solid #666;
+            padding: 5px;
+            input{
+                width:200px;
+                border:none;
+                outline:none;
+                font-size:20px;
+            }
+        }
+        .language {
+            font-size: 16px;
+        }
+    }
+    .nav-home {
+        width: 200px;
+        margin-left:30px;
+        img{
+            height:40px;
+            width:40px;
+        }
+    }
 }
 .left-menu {
     overflow-y: hidden;
     position: fixed;
     left: 0;
-    top: 0;
-    padding: 15px;
+    top: 0px;
+    padding: 0 15px;
     width: $navW;
-    height: 100vh;
-    background-color: #830051;
+    height: 100%;
+    background-color: $az-mag;
     color: white;
-    box-shadow: 1px 0 5px 0 black;
-    @media screen and (max-height:720px) {
+    // box-shadow: 1px 0 5px 0 black;
+    @media screen and (max-height:600px) {
         overflow-y: scroll;
         width: $navW+20;
-    }
-    header {
-        .language {
-            font-size: 14px;
-        }
-        .home {
-            figure {
-                margin: 0;
-                padding: 15px 0;
-                img {
-                    display: inline;
-                }
-                figcaption {
-                    display: inline;
-                    font-size: 32px;
-                    padding-left: 15px;
-                    @include vertical-align();
-                }
-            }
-        }
     }
     nav {
         margin: 0 -15px;
@@ -149,51 +187,52 @@ $trailW:240px;
         }
     }
 }
-.tableofcontents{
-    padding: 10px 0;
-    width:240px;
-    position:fixed;
-    left:240px;
-    top:0;
-    bottom:0;
-    li{
+.tableofcontents {
+    padding-right:30px;
+    width: 240px;
+    position: fixed;
+    left: 240px;
+    top: 0;
+    bottom: 0;
+    .vertical.menu{
+        padding-left:10px;
+    }
+    li {
         margin: 0;
         padding: 0;
-        .active{
-            background-color:RGBA(255,255,255,0.2);
+        .active {
+            background-color: RGBA(255,255,255,0.2);
         }
-        a{
+        a {
             padding: 15px;
-            color:white;
+            color: white;
         }
     }
 }
 main {
-    padding: 10px;
-    min-width:500px;
+    max-width: 80%;
+    padding-top:60px;
     margin-left: $navW*2;
-    &:not(.home){
-        min-height:2000px;
+    transition: all 0.7s ease-in-out;
+    &:not(.home) {
+        min-height: 2000px;
     }
-    &.home{
+    &.home {
         margin-left: $navW;
     }
-    @media screen and (max-height:720px) {
-        margin-left: $navW+20;
-    }
     .info {
-        height:300px;
-        overflow:hidden;
-        #chatter{
+        height: 300px;
+        overflow: hidden;
+        #chatter {
             background-image: url("/fdn1/img/chatter_nobarder.png");
-            background-position:center center;
-            background-repeat:no-repeat;
-            background-size:contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
         }
     }
     .new-stuff {
         .orbit-image {
-            height:500px;
+            height: 500px;
         }
         .orbit-caption {
             display: flex;
